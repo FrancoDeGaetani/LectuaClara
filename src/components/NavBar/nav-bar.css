@@ -1,0 +1,29 @@
+.nav-bar{
+    height: 85px;
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar-logo{
+    height: 75px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.nav-link{
+    width: 10rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-especial);
+}
+

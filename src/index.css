@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Baskerville;
+    src: url('../assets/fonts/Libre_Baskerville/Baskerville.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-principal: #A31621;
+    --color-secundario: #F9EEE0;
+    --color-terciario: #FFF4E8;
+    --color-texto-especial: #555555;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+}

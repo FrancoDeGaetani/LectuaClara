@@ -1,0 +1,32 @@
+
+.sidebar{
+    width: 380px;
+    height: 1000px;
+    background-color: var(--color-terciario);
+    padding: 20px;
+    box-sizing: border-box;
+    border: 8px double var(--color-principal);
+    border-radius: 15px;
+}
+.sidebar h2{
+    text-align: center;
+    margin: 30px auto;
+    font-family: Baskerville;
+    font-size: 30px;
+    text-align: center;
+    text-wrap: pretty;
+}
+.filtros{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+.filtros h3{
+    font-family: Baskerville;
+    font-size: 27px;
+    text-align: center;
+    margin-block: 0;
+    margin: 10px;
+    letter-spacing: 2px;
+}

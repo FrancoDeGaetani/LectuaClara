@@ -1,0 +1,69 @@
+.random-book-weekly-false, .random-book-weekly-true{
+    width: 68%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.random-book-weekly-false{
+    padding-left: 70px;
+    background-color: var(--color-terciario);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.random-book-weekly-false-button, .random-book-weekly-true-info button{
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Baskerville;
+}
+
+.random-book-weekly-true{
+    display: flex;
+    justify-content: space-around;
+    width: 71%;
+    background-color: var(--color-terciario);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.random-book-weekly-false h2{
+    margin-bottom: 40px;
+    color: var(--color-texto-especial);
+    font-size: 35px;
+}
+.random-book-weekly-true h2{
+    width: 40%;
+    color: var(--color-texto-especial);
+    font-size: 35px;
+    margin-block: 0;
+    margin-top:20px ;
+}
+
+.random-book-weekly-true-info{
+    display: flex;
+    gap: 10px;
+}
+.random-book-weekly-true-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+
+}
+.random-book-weekly-true-info-text h3{
+    font-size: 24px;
+}
+.random-book-weekly-true-info-text p{
+    font-size: 18px;
+}
+.random-book-weekly-true-info h3, .random-book-weekly-true-info p{
+    margin-block: 0;
+}
+
