@@ -6,6 +6,7 @@
     width: 85%;
     background-color: var(--color-terciario);
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .hero-banner-text{
     display: flex;

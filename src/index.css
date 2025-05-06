@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: Lato;
+    src: url(../src/assets/fonts/Lato/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --color-principal: #A31621;
@@ -18,4 +24,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--color-secundario);
+}
+p{
+    text-wrap: pretty;;
 }

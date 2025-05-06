@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react'; 
 import axios from 'axios'
 import './RandomBook.css'
+import { Link } from 'react-router-dom'
 
 const LOCAL_STORAGE_KEY = 'libroSemanal'
 const ONE_WEEK = 7 * 24 * 60 * 60 * 1000
@@ -84,7 +85,7 @@ function weeklyBookRecomandation(){
                     <div className="random-book-weekly-true-info-text">
                         <h3>{info.title}</h3>
                         <p> Autor: {info.authors?.[0] || 'Autor desconocido'}</p>
-                        <button>Conocelo!</button>
+                        <Link to={`book-info/${book.id}`} className='biblio-button'> Ver mas!</Link>
                     </div>
                     <div className='random-book-weekly-true-info-image'>
                         <img src={info.imageLinks?.thumbnail} alt={info.title} />

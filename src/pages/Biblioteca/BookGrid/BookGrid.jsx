@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './BookGrid.css'
 
 function BookGrid ( {max, generos, filtrosActivos} ) {
@@ -49,7 +50,7 @@ function BookGrid ( {max, generos, filtrosActivos} ) {
                             <img src={info.imageLinks?.thumbnail} alt={info.title} />
                             <h3>{info.title}</h3>
                             <p>{info.authors?.[0] || 'Autor desconocido'}</p>
-                            <button>Ver mas!</button>
+                            <Link to={`/book-info/${libro.id}`} className='biblio-button'> Ver mas!</Link>
                         </div>
                     );
                 })}

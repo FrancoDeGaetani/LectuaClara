@@ -31,9 +31,16 @@
 .card h3,.card p{
     margin: 5px;
     font-family: Baskerville;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.card button{
+.card p{
+    font-family: Lato;
+}
+
+.biblio-button{
     background-color: var(--color-principal);
     color: var(--color-secundario);
     border: none;
@@ -43,4 +50,5 @@
     font-size: 19px;
     font-family: Baskerville;
     font-weight: bold;
+    text-decoration: none;
 }
