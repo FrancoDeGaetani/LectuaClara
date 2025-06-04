@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./BookInfo.css";
+import ButtonsBiblio from "../../components/ButtonsBiblio/ButtonsBiblio";
 
 function BookInfo() {
     const { id } = useParams();
@@ -51,6 +52,7 @@ function BookInfo() {
                 <h3>Descripción:</h3>
                 <p>{text()}</p>
             </div>
+            <ButtonsBiblio libro={libro} />
         </div>
 
     );

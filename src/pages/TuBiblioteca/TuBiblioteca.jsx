@@ -1,10 +1,18 @@
 
+import { useState } from "react";
+
+import HeroBannerBiblio from "./HeroBannerBiblio/HeroBannerBiblio";
+import BibliotecaTabs from "./TuBibliotecaTab/TuBibliotecaTab";
+
+
 
 function TuBiblioteca() {
+
+
     return (
         <div className="tu-biblioteca">
-            <h1>Tu Biblioteca</h1>
-            <p>Esta es tu biblioteca personal.</p>
+            <HeroBannerBiblio/>
+            <BibliotecaTabs />
         </div>
     );
     }

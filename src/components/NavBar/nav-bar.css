@@ -27,3 +27,8 @@
     color: var(--color-texto-especial);
 }
 
+.nav-link:hover{
+    background-color: var(--color-texto-especial);
+    color: var(--color-secundario);
+}
+

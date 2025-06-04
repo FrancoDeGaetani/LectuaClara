@@ -13,9 +13,7 @@ function Home (){
 
     return(
             <>
-                <div className='hero-banner'>
-                    <HeroBanner />
-                </div>
+                <HeroBanner />
                 <GridHome max = { 8 } />
                 <div className='random-book-container'>
                     <RandomBook />
