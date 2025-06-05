@@ -71,6 +71,12 @@
         font-size: 20px;
     }
 }
+@media (max-width:700px){
+    .hero-banner-container {
+        margin-top: 90px;
+    }
+}
+
 @media (max-width:650px){
     .hero-banner-container {
         justify-content: center;
