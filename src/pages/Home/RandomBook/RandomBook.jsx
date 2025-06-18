@@ -85,7 +85,7 @@ function weeklyBookRecomandation(){
                     <div className="random-book-weekly-true-info-text">
                         <h3>{info.title}</h3>
                         <p> Autor: {info.authors?.[0] || 'Autor desconocido'}</p>
-                        <Link to={`book-info/${book.id}`} className='biblio-button'> Ver mas!</Link>
+                        <Link to={`book-info/${book.id}`} className='random-book-weekly-true-button'> Ver mas!</Link>
                     </div>
                     <div className='random-book-weekly-true-info-image'>
                         <img src={info.imageLinks?.thumbnail} alt={info.title} />

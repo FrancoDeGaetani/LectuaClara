@@ -48,9 +48,11 @@ function BookGrid ( {max, generos, filtrosActivos} ) {
                     return (
                         <div key={libro.id} className="card">
                             <img src={info.imageLinks?.thumbnail} alt={info.title} />
-                            <h3>{info.title}</h3>
-                            <p>{info.authors?.[0] || 'Autor desconocido'}</p>
-                            <Link to={`/book-info/${libro.id}`} className='biblio-button'> Ver mas!</Link>
+                            <div className='card-info'>
+                                <h3>{info.title}</h3>
+                                <p>{info.authors?.[0] || 'Autor desconocido'}</p>
+                                <Link to={`/book-info/${libro.id}`} className='biblio-button'> Ver mas!</Link>
+                            </div>
                         </div>
                     );
                 })}

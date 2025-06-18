@@ -27,8 +27,7 @@ function Biblioteca() {
 
 
     return (
-        <div >
-            
+
             <div className="biblioteca">
                 <SideBarBiblio onFilterChange ={ handleFilterChange }/>
                 <div>
@@ -37,7 +36,7 @@ function Biblioteca() {
                     <button onClick={ pagination } className="ver-mas-biblio" > Ver mas Libros! </button>
                 </div>
             </div>
-        </div>
+            
     )
 }
 

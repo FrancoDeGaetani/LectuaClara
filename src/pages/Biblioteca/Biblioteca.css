@@ -9,10 +9,9 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    margin: 40px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .ver-mas-biblio{
     width: 550px;
@@ -26,6 +25,36 @@
     font-weight: bold;
     background-color: var(--color-secundario);
     border: 2px solid var(--color-principal);
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+.ver-mas-biblio:hover{
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+@media (max-width: 1700px){
+    .biblioteca{
+        gap: 50px;
+    }
+}
+@media (max-width: 1050px){
+    .biblioteca{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    .biblioteca{
+        margin-top: 100px;
+    }
+    .ver-mas-biblio{
+        width: 300px;
+    }
+}
+@media (max-width: 400px){
+    .ver-mas-biblio{
+        width: 100%;
+        font-size: 22px;
+    }
 }
