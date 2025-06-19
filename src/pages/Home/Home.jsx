@@ -16,14 +16,12 @@ function Home (){
     useLayoutEffect(() => {
         const handleResize = () => {
             const width = window.innerWidth;
-            if (width <= 1250) {
-                setMax(6);
-            } else {
-                setMax(8);
-            }
+            const newMax = width <= 1250 ? 6 : 8;
+
+            setMax(prevMax => (prevMax !== newMax ? newMax : prevMax));
         };
 
-        handleResize(); // Ejecuta una vez en el primer montaje
+        handleResize();
 
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);

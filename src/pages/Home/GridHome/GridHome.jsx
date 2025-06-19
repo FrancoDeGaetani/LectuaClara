@@ -10,17 +10,17 @@ function GridHome ({ max }) {
     useEffect(() => {
         const cargarLibros = async () => {
 
-        const palabras = ['historia', 'fantasía', 'aventura', 'novela', 'ficción', 'misterio', 'suspenso', 'ciencia ficción', 'romance', 'biografía', 'autoayuda', 'historia real', 'ensayo', 'poesía', 'clásico', 'literatura contemporánea', 'thriller', 'drama', 'comedia'];
-        const palabra = palabras[Math.floor(Math.random() * palabras.length)];
-        const randomIndex = Math.floor(Math.random() * 30); 
+            const palabras = ['historia', 'fantasía', 'aventura', 'novela', 'ficción', 'misterio', 'suspenso', 'ciencia ficción', 'romance', 'biografía', 'autoayuda', 'historia real', 'ensayo', 'poesía', 'clásico', 'literatura contemporánea', 'thriller', 'drama', 'comedia'];
+            const palabra = palabras[Math.floor(Math.random() * palabras.length)];
+            const randomIndex = Math.floor(Math.random() * 30); 
         
             try {
                 const response = await axios.get('https://www.googleapis.com/books/v1/volumes', {
-                params: {
-                    q: palabra,
-                    startIndex: randomIndex,
-                    maxResults: max || 20,
-                },
+                    params: {
+                        q: palabra,
+                        startIndex: randomIndex,
+                        maxResults: max || 8,
+                    },
                 });
         
                 if (response.data.items) {
@@ -29,8 +29,9 @@ function GridHome ({ max }) {
             } catch (error) {
                 console.error('Error cargando libros:', error);
             }};
-        
+
             cargarLibros();
+            
         }, [max]);
         
         return (

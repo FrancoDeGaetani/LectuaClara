@@ -11,7 +11,7 @@
     font-size: 40px;
     color: var(--color-secundario);
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--sombra);
 }
 .book-info{
     margin: 50px auto;
@@ -19,7 +19,8 @@
     border: 2px solid var(--color-principal);
     border-radius: 10px;
     padding: 35px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--sombra);
+    background-color: var(--color-secundario);
 }
 .book-info h1{
     text-align: center;
